@@ -49,5 +49,8 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 $(call inherit-product-if-exists, vendor/motorola/spyder/spyder-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/spyder/spyder-vendor-stock-camera.mk)
+$(call inherit-product-if-exists, vendor/motorola/spyder/spyder-vendor-stock-ducati.mk)
+$(call inherit-product-if-exists, vendor/motorola/spyder/spyder-vendor-stock-omx.mk)
 $(call inherit-product-if-exists, vendor/motorola/omap4-common/common-vendor-pvr.mk)
 
