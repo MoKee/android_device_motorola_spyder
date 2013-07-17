@@ -44,13 +44,10 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilts
 PRODUCT_COPY_FILES += \
-    $(DEVICE_FOLDER)/apns-conf.xml:system/etc/apns-conf.xml \
     $(DEVICE_FOLDER)/media_profiles.xml:system/etc/media_profiles.xml \
     $(DEVICE_FOLDER)/vold.fstab:system/etc/vold.fstab
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-$(call inherit-product-if-exists, vendor/motorola/spyder/spyder-vendor.mk)
-$(call inherit-product-if-exists, vendor/motorola/spyder/spyder-vendor-stock-camera.mk)
-$(call inherit-product-if-exists, vendor/motorola/spyder/spyder-vendor-stock-ducati.mk)
-$(call inherit-product-if-exists, vendor/motorola/omap4-common/common-vendor-pvr.mk)
-
+$(call inherit-product, vendor/motorola/spyder/spyder-vendor.mk)
+$(call inherit-product, vendor/motorola/omap4-common/omap4-common-imgtec-vendor-blobs.mk)
+$(call inherit-product, vendor/motorola/omap4-common/omap4-common-lte-vendor-blobs.mk)
