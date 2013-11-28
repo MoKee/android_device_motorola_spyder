@@ -16,7 +16,7 @@ ro.modem_available=0
 
 # Default network type.
 # 7 => GLOBAL.
-ro.telephony.default_network=3
+ro.telephony.default_network=10
 ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
 ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
 ro.cdma.home.operator.numeric=46001
